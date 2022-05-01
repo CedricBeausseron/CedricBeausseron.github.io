@@ -4,14 +4,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cédric Beausseron</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <h1>hi</h1>
-        <a href="/contact.html">Contact</a>
-        <contact></contact>
+        <div class="container">
+            <h1>hi</h1>
+            <a href="/contact.html">Contact</a>
+            <contact></contact>
+            <div class="row">
+                <div class="col-4">A</div>
+                <div class="col-4">B</div>
+                <div class="col-4">C</div>
+            </div>
+        </div>
     </body>
 
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script>
     fetch("./contact.html")
     .then(response => {
