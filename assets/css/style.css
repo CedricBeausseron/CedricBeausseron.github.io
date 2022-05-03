@@ -8,3 +8,6 @@ body{
 .bordered{
     border:1px solid black;
 }
+.footer{
+    height:80px;
+}
