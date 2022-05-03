@@ -1,3 +1,6 @@
+if(window.location.includes("https")) {
+    console.log('prod')
+}
 function getHtml(htmlType, htmlName){
     fetch("/nophp/cedricbeausseron.github.io/"+htmlType+"/"+htmlName+".html")
     .then(response => {
