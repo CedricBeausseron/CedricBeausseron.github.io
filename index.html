@@ -3,17 +3,19 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cédric Beausseron</title>
+        <title>Eportfolio Cédric Beausseron</title>
+        <link rel="icon" href="assets/images/favicon.ico">
         <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
         <div class="container bg-light pt-5">
-            <h1>hi</h1>
+            <h1>Cédric Beausseron<br>Développeur web</h1>
             <p>Problème rencontré : <a href="https://stackoverflow.com/questions/72096530/html-get-root-route-depending-on-dev-and-prod-environment-to-call-js-and-css">voir le stack</a></p>
             <a href="pages/contact.html">Voir la page contact</a>
             
             <skills></skills>
+            <experiences></experiences>
             <game></game>
             <contact></contact>
         </div>
@@ -24,6 +26,7 @@
     <script type="text/javascript" src="assets/js/functions.js"></script>
     <script>
         getTemplate("skills");
+        getTemplate("experiences");
         getTemplate("game");
         getTemplate("contact");
         getTemplate("footer");
