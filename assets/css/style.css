@@ -46,7 +46,10 @@ body{
 .section{
     margin: 3rem 0;
 }
+/* .progress{
+    visibility:hidden;
+} */
 .progress-bar{
-    transition-duration: 10s;
+    /* transition-duration: 10s; */
     width:0%;
 }
