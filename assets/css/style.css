@@ -1,10 +1,6 @@
 body{
     margin:0;
-    /* background-color:lightblue; */
 }
-/* .container{
-    background-color: #f0f0f0 ;
-} */
 .bordered{
     border:1px solid black;
 }
@@ -16,11 +12,6 @@ body{
   justify-content: center;
   align-items: center;
 }
-/* .footer .col-4 a{
-    padding:10px;
-    border-radius: 5px;
-    transition-duration: 200ms;
-} */
 .footer .col-4 .btn.btn-dark:hover{
     background-color:#f0f0f0;
     color:#212529!important;
@@ -50,6 +41,6 @@ body{
     visibility:hidden;
 } */
 .progress-bar{
-    /* transition-duration: 10s; */
+    transition-duration: 3s;
     width:0%;
 }

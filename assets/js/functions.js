@@ -8,10 +8,10 @@ function experiences(){
     setTimeout(() => { 
         let progressBars = document.getElementsByClassName("progress-bar");
         for (let item of progressBars) {
-            // console.log(item.getAttribute("aria-valuenow"));
-            console.log(item.closest('.progress').style.visibility)
-            // item.closest('.progress').style.visibility = "visible;"
             item.style.width = item.getAttribute("aria-valuenow")+"%";
+            
+            // console.log(item.closest('.progress').style.visibility)
+            // item.closest('.progress').style.visibility = "visible;"
         }
      },0 )
 }
