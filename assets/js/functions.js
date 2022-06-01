@@ -29,14 +29,24 @@ function executeFunctionByName(functionName, context /*, args */) {
     }
 }
 
+//lire les script ajouté via innerHTML
+var setInnerHTML = function(elm, html) {
+    elm.innerHTML = html;
+    Array.from(elm.querySelectorAll("script")).forEach( oldScript => {
+      const newScript = document.createElement("script");
+      Array.from(oldScript.attributes)
+        .forEach( attr => newScript.setAttribute(attr.name, attr.value) );
+      newScript.appendChild(document.createTextNode(oldScript.innerHTML));
+      oldScript.parentNode.replaceChild(newScript, oldScript);
+    });
+}
 function getHtml(htmlType, htmlName){
     fetch("/"+rootPath+htmlType+"/"+htmlName+".html")
     .then(response => {
         return response.text()
     })
     .then(data => {
-        document.querySelector(htmlName).innerHTML = data;
-        
+        setInnerHTML(document.querySelector(htmlName), data);        
         executeFunctionByName(htmlName, window, "truc")
     });
 }
