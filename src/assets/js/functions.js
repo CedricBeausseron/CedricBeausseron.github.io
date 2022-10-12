@@ -1,7 +1,7 @@
-let rootPath = ""
-if(! window.location.href.includes("https://cedricbeausseron.github.io")) {
-    rootPath = "nophp/cedricbeausseron.github.io/"
-}
+// let rootPath = ""
+// if(! window.location.href.includes("https://cedricbeausseron.github.io")) {
+//     rootPath = "C:/Users/cedric.beausseron/Documents/github/CedricBeausseron"
+// }
 
 //fonctions de templates
 function experiences(){
@@ -41,7 +41,8 @@ var setInnerHTML = function(elm, html) {
     });
 }
 function getHtml(htmlType, htmlName){
-    fetch("/"+rootPath+htmlType+"/"+htmlName+".html")
+    // fetch("/"+rootPath+"/public/"+htmlType+"/"+htmlName+".html")
+    fetch(htmlType+"/"+htmlName+".html")
     .then(response => {
         return response.text()
     })
